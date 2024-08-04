@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding: 12px;
   gap: 16px;
-  width: 411px;
+  max-width: 411px;
   background: #F0F0F0;
   border-radius: 12px;
 }

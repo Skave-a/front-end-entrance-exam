@@ -3,6 +3,7 @@ import '../css/connection.css';
 export function createConnection() {
   const connectionDiv = document.createElement('div');
   connectionDiv.className = 'contact';
+  connectionDiv.contentEditable = 'true';
 
   const titleDiv = document.createElement('div');
   titleDiv.className = 'title';

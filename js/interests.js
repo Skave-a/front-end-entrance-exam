@@ -3,6 +3,7 @@ import '../css/interests.css';
 export function createInterests() {
   const interestsDiv = document.createElement('div');
   interestsDiv.className = 'extra-box';
+  interestsDiv.contentEditable = 'true';
 
   const interestsBox = document.createElement('div');
   interestsBox.className = 'interests-box';

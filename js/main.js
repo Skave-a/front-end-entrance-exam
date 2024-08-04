@@ -1,5 +1,5 @@
 import '../css/style.css'
-
+import { html2pdf } from 'html2pdf';
 import { createPhoto } from './photo.js';
 import { createGreeting } from './greeting.js';
 import { createLanguages } from './language.js';
@@ -36,10 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
   row3.appendChild(createEducation());
   row3.appendChild(col1);
 
-
   wrapper.appendChild(row1);
   wrapper.appendChild(row2);
   wrapper.appendChild(row3);
 
   app.appendChild(wrapper);
+
+  const downloadButton = document.createElement('button');
+  downloadButton.textContent = 'Скачать';
+  downloadButton.className = 'download-button';
+  downloadButton.addEventListener('click', () => {
+    const element = document.querySelector('.wrapper');
+    html2pdf()
+      .from(element)
+      .save('resume.pdf');
+  });
+
+  app.appendChild(downloadButton);
 });

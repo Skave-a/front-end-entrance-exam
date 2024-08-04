@@ -3,6 +3,7 @@ import '../css/experience.css';
 export function createExperience() {
   const experienceDiv = document.createElement('div');
   experienceDiv.className = 'experience';
+  experienceDiv.contentEditable = 'true';
 
   const title = document.createElement('p');
   title.className = 'title';

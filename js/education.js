@@ -3,6 +3,13 @@ import '../css/education.css';
 export function createEducation() {
   const educationDiv = document.createElement('div');
   educationDiv.className = 'education-box';
+  educationDiv.contentEditable = 'true';
+
+  const header = document.createElement('h2');
+  header.className = 'title';
+  header.textContent = 'Education';
+
+  educationDiv.appendChild(header);
 
   const createTags = (tags) => {
     return tags.map(tag => {
