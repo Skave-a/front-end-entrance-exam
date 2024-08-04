@@ -22,7 +22,7 @@ export function createTools() {
 
     icons.forEach((icon) => {
       const img = document.createElement('img');
-      img.src = `../assets/${className}/${icon}`;
+      img.src = `../assets/${icon}`;
       img.className = `${className}-icon`;
       section.appendChild(img);
     });
@@ -55,7 +55,7 @@ export function createTools() {
 
   tools.appendChild(createSection('design', designIcons));
   tools.appendChild(createSection('no-code', noCodeIcons));
-  tools.appendChild(createSection('artificial-intelligence', aiIcons));
+  tools.appendChild(createSection('ai', aiIcons));
   toolsDiv.appendChild(tools);
 
   return toolsDiv;

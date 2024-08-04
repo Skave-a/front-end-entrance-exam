@@ -70,7 +70,7 @@ body {
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #28d979;
   color: white;
   border: none;
   border-radius: 5px;
@@ -78,5 +78,48 @@ body {
 }
 
 .download-button:hover {
-  background-color: #45a049;
+  background-color: #28d979;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #28d97852;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
 }

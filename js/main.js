@@ -42,10 +42,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const downloadButton = document.createElement('button');
   downloadButton.textContent = 'Скачать';
-  downloadButton.className = 'download-button';
+  downloadButton.className = 'download-button ripple';
   downloadButton.addEventListener('click', () => {
     const element = document.querySelector('.wrapper');
     html2pdf().from(element).save('resume.pdf');
+  });
+
+  downloadButton.addEventListener('click', function (e) {
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple-effect';
+    const rect = this.getBoundingClientRect();
+    ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) + 'px';
+    ripple.style.left = e.clientX - rect.left - ripple.offsetWidth / 2 + 'px';
+    ripple.style.top = e.clientY - rect.top - ripple.offsetHeight / 2 + 'px';
+    this.appendChild(ripple);
+
+    ripple.addEventListener('animationend', () => {
+      ripple.remove();
+    });
   });
 
   app.appendChild(downloadButton);
