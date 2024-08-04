@@ -1,5 +1,3 @@
-import '../css/tools.css';
-
 export function createTools() {
   const toolsDiv = document.createElement('div');
   toolsDiv.className = 'toolsBox';
@@ -22,7 +20,7 @@ export function createTools() {
     tag.appendChild(tagText);
     section.appendChild(tag);
 
-    icons.forEach(icon => {
+    icons.forEach((icon) => {
       const img = document.createElement('img');
       img.src = `../assets/${className}/${icon}`;
       img.className = `${className}-icon`;
@@ -38,21 +36,17 @@ export function createTools() {
     'illustrator.svg',
     'premiere.svg',
     'logoNotion.svg',
-    'logoMeet.svg',
+    'logoMeet.svg'
   ];
 
   const noCodeIcons = [
     'logoZapier.svg',
     'logoWordpress.svg',
     'logoFramer.svg',
-    'logoWebflow.svg',
+    'logoWebflow.svg'
   ];
 
-  const aiIcons = [
-    'logoChatGPT.svg',
-    'logoCopilot.svg',
-    'logoMidjourney.svg'
-  ];
+  const aiIcons = ['logoChatGPT.svg', 'logoCopilot.svg', 'logoMidjourney.svg'];
 
   toolsDiv.appendChild(title);
 

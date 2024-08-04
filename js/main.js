@@ -1,4 +1,3 @@
-import '../css/style.css'
 import { html2pdf } from 'html2pdf';
 import { createPhoto } from './photo.js';
 import { createGreeting } from './greeting.js';
@@ -47,9 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   downloadButton.className = 'download-button';
   downloadButton.addEventListener('click', () => {
     const element = document.querySelector('.wrapper');
-    html2pdf()
-      .from(element)
-      .save('resume.pdf');
+    html2pdf().from(element).save('resume.pdf');
   });
 
   app.appendChild(downloadButton);

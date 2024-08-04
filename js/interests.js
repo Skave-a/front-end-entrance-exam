@@ -1,5 +1,3 @@
-import '../css/interests.css';
-
 export function createInterests() {
   const interestsDiv = document.createElement('div');
   interestsDiv.className = 'extra-box';
@@ -26,13 +24,13 @@ export function createInterests() {
     'Music',
     'Travel',
     'Fitness',
-    'Gaming',
+    'Gaming'
   ];
 
   interests.forEach((interest, index) => {
     const tag = document.createElement('div');
     tag.className = 'tag-in';
-    
+
     const name = document.createElement('span');
     name.className = 'name';
     name.textContent = interest;

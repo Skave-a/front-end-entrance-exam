@@ -1,5 +1,3 @@
-import '../css/greeting.css';
-
 export function createGreeting() {
   const infoDiv = document.createElement('div');
   infoDiv.className = 'info';

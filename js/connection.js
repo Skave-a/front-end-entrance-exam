@@ -1,5 +1,3 @@
-import '../css/connection.css';
-
 export function createConnection() {
   const connectionDiv = document.createElement('div');
   connectionDiv.className = 'contact';
@@ -19,7 +17,8 @@ export function createConnection() {
 
   const subtitleText = document.createElement('span');
   subtitleText.className = 'subtitle-text';
-  subtitleText.textContent = 'Let´s chat! I´m ready to work on exciting projects';
+  subtitleText.textContent =
+    'Let´s chat! I´m ready to work on exciting projects';
 
   subtitleDiv.appendChild(subtitleText);
 

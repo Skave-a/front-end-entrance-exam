@@ -7,7 +7,7 @@
   gap: 16px;
   width: 268px;
   height: 289px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border-radius: 12px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .education-item-1 {
-  background: #28D979;
+  background: #28d979;
   color: #fff;
 }
 
@@ -85,7 +85,8 @@
   width: 100px;
 }
 
-.direction, .name-title {
+.direction,
+.name-title {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;

@@ -5,7 +5,7 @@
   padding: 12px;
   gap: 16px;
   max-width: 411px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border-radius: 12px;
 }
 
@@ -18,7 +18,7 @@
 .job {
   display: flex;
   flex-direction: column;
-  background: #FFF;
+  background: #fff;
   border-radius: 12px;
   padding: 12px;
   width: 100%;
@@ -38,7 +38,7 @@
 }
 
 .recent-job {
-  background: #28D979;
+  background: #28d979;
 }
 
 .date-exp {
@@ -85,5 +85,5 @@
   font-weight: 500;
   font-size: 8px;
   line-height: 155%;
-  color: #DDF163;
+  color: #ddf163;
 }

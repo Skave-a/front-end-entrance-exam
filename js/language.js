@@ -1,5 +1,3 @@
-import '../css/language.css';
-
 export function createLanguages() {
   const languagesDiv = document.createElement('div');
   languagesDiv.className = 'languages';
@@ -24,7 +22,7 @@ export function createLanguages() {
     { name: 'Uzbek', width: '16px' }
   ];
 
-  languages.forEach(lang => {
+  languages.forEach((lang) => {
     const langItem = document.createElement('div');
     langItem.className = 'language-item';
 

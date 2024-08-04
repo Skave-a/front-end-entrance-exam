@@ -1,5 +1,3 @@
-import '../css/education.css';
-
 export function createEducation() {
   const educationDiv = document.createElement('div');
   educationDiv.className = 'education-box';
@@ -12,7 +10,7 @@ export function createEducation() {
   educationDiv.appendChild(header);
 
   const createTags = (tags) => {
-    return tags.map(tag => {
+    return tags.map((tag) => {
       const tagElement = document.createElement('span');
       tagElement.className = 'tag-ed';
       tagElement.textContent = tag;
@@ -49,7 +47,16 @@ export function createEducation() {
 
   const tags1 = document.createElement('div');
   tags1.className = 'tags';
-  createTags(['#UX', '#UI', '#research', '#DesignSystem', '#Ui', '#wireframing', '#figma', '#Ux']).forEach(tag => {
+  createTags([
+    '#UX',
+    '#UI',
+    '#research',
+    '#DesignSystem',
+    '#Ui',
+    '#wireframing',
+    '#figma',
+    '#Ux'
+  ]).forEach((tag) => {
     tags1.appendChild(tag);
   });
 
@@ -85,7 +92,12 @@ export function createEducation() {
 
   const tags2 = document.createElement('div');
   tags2.className = 'tags';
-  createTags(['#law', '#legalStudies', '#contracts', '#internationalLaws']).forEach(tag => {
+  createTags([
+    '#law',
+    '#legalStudies',
+    '#contracts',
+    '#internationalLaws'
+  ]).forEach((tag) => {
     tags2.appendChild(tag);
   });
 
@@ -121,9 +133,11 @@ export function createEducation() {
 
   const tags3 = document.createElement('div');
   tags3.className = 'tags';
-  createTags(['#branding', '#web', '#illustration', '#adobe']).forEach(tag => {
-    tags3.appendChild(tag);
-  });
+  createTags(['#branding', '#web', '#illustration', '#adobe']).forEach(
+    (tag) => {
+      tags3.appendChild(tag);
+    }
+  );
 
   content3.appendChild(direction3);
   content3.appendChild(tags3);
