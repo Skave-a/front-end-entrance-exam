@@ -1,3 +1,27 @@
+
+https://skave-a.github.io/front-end-entrance-exam/
+
+## Preparing for cross-check
+
+#### Clone repo
+
+```
+git clone https://github.com/Skave-a/front-end-entrance-exam.git
+```
+
+#### Install dependencies
+
+```
+npm install
+```
+
+#### Run in development mode
+
+```
+npm run dev
+```
+
+
 # Вступительный экзамен для Front-end разработчика
 
 ## Задача
