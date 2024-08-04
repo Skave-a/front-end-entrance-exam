@@ -1,4 +1,3 @@
-import { html2pdf } from 'html2pdf';
 import { createPhoto } from './photo.js';
 import { createGreeting } from './greeting.js';
 import { createLanguages } from './language.js';
