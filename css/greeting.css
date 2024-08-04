@@ -1,0 +1,35 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+  background: #F0F0F0;
+  border-radius: 12px;
+}
+
+.info .hello {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.info .name-role {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info .name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104%;
+}
+
+.info .role {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #5C5C5C;
+}
