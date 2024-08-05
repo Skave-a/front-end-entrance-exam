@@ -1,3 +1,5 @@
+import { addRippleEffect } from './ripple';
+
 export function createEducation() {
   const educationDiv = document.createElement('div');
   educationDiv.className = 'education-box';
@@ -153,6 +155,8 @@ export function createEducation() {
 
   educationDiv.appendChild(row1);
   educationDiv.appendChild(education3);
+
+  addRippleEffect(educationDiv);
 
   return educationDiv;
 }

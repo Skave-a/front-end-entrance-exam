@@ -7,11 +7,10 @@
   gap: 12px;
   background: #000000;
   border-radius: 12px;
+  position: relative;
 }
 
 .title-con {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;

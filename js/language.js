@@ -1,7 +1,8 @@
+import { addRippleEffect } from './ripple';
+
 export function createLanguages() {
   const languagesDiv = document.createElement('div');
   languagesDiv.className = 'languages';
-  languagesDiv.contentEditable = 'true';
 
   const languagesTitle = document.createElement('h2');
   languagesTitle.className = 'title';
@@ -29,6 +30,7 @@ export function createLanguages() {
     const langName = document.createElement('p');
     langName.className = 'language-name';
     langName.textContent = lang.name;
+    langName.contentEditable = 'true';
 
     langItem.appendChild(langName);
     languageList.appendChild(langItem);
@@ -48,6 +50,8 @@ export function createLanguages() {
 
   languagesDiv.appendChild(languagesTitle);
   languagesDiv.appendChild(listLanguages);
+
+  addRippleEffect(languagesDiv);
 
   return languagesDiv;
 }

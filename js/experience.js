@@ -1,3 +1,5 @@
+import { addRippleEffect } from './ripple';
+
 export function createExperience() {
   const experienceDiv = document.createElement('div');
   experienceDiv.className = 'experience';
@@ -122,6 +124,8 @@ export function createExperience() {
 
   experienceDiv.appendChild(title);
   experienceDiv.appendChild(jobContainer);
+
+  addRippleEffect(experienceDiv);
 
   return experienceDiv;
 }

@@ -7,6 +7,7 @@
   height: 124px;
   background: #f0f0f0;
   border-radius: 12px;
+  position: relative;
 }
 
 .languages .nameTitle {

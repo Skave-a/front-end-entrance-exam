@@ -1,3 +1,5 @@
+import { addRippleEffect } from './ripple';
+
 export function createInterests() {
   const interestsDiv = document.createElement('div');
   interestsDiv.className = 'extra-box';
@@ -42,6 +44,8 @@ export function createInterests() {
   interestsBox.appendChild(titleDiv);
   interestsBox.appendChild(contentDiv);
   interestsDiv.appendChild(interestsBox);
+
+  addRippleEffect(interestsBox);
 
   return interestsDiv;
 }

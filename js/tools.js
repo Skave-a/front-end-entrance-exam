@@ -22,7 +22,7 @@ export function createTools() {
 
     icons.forEach((icon) => {
       const img = document.createElement('img');
-      img.src = `../assets/${icon}`;
+      img.src = `./assets/${icon}`;
       img.className = `${className}-icon`;
       section.appendChild(img);
     });

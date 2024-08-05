@@ -1,3 +1,5 @@
+import { addRippleEffect } from './ripple';
+
 export function createGreeting() {
   const infoDiv = document.createElement('div');
   infoDiv.className = 'info';
@@ -23,6 +25,8 @@ export function createGreeting() {
 
   infoDiv.appendChild(helloText);
   infoDiv.appendChild(nameRoleDiv);
+
+  addRippleEffect(infoDiv);
 
   return infoDiv;
 }

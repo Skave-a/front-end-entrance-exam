@@ -1,3 +1,5 @@
+import { addRippleEffect } from './ripple';
+
 export function createConnection() {
   const connectionDiv = document.createElement('div');
   connectionDiv.className = 'contact';
@@ -34,6 +36,8 @@ export function createConnection() {
   connectionDiv.appendChild(titleDiv);
   connectionDiv.appendChild(subtitleDiv);
   connectionDiv.appendChild(emailDiv);
+
+  addRippleEffect(connectionDiv);
 
   return connectionDiv;
 }
