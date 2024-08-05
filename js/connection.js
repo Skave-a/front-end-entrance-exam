@@ -1,4 +1,4 @@
-import { addRippleEffect } from './ripple';
+import { addRippleEffect } from './ripple.js';
 
 export function createConnection() {
   const connectionDiv = document.createElement('div');

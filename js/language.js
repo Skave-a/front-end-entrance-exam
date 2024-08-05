@@ -1,4 +1,4 @@
-import { addRippleEffect } from './ripple';
+import { addRippleEffect } from './ripple.js';
 
 export function createLanguages() {
   const languagesDiv = document.createElement('div');
