@@ -26,7 +26,7 @@ export function createInterests() {
     'Music',
     'Travel',
     'Fitness',
-    'Gaming'
+    'Gaming',
   ];
 
   interests.forEach((interest, index) => {

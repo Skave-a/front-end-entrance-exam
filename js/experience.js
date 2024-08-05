@@ -19,9 +19,9 @@ export function createExperience() {
       aboutJob: 'YNA',
       additional: 'Full-time',
       featuredPoints: [
-        'Development and implementation of responsive web interfaces that enhance user experience and accessibility, using modern HTML, CSS, and JavaScript frameworks'
+        'Development and implementation of responsive web interfaces that enhance user experience and accessibility, using modern HTML, CSS, and JavaScript frameworks',
       ],
-      isRecent: true
+      isRecent: true,
     },
     {
       date: 'Sep. 2023 - Jun. 2024',
@@ -29,9 +29,9 @@ export function createExperience() {
       aboutJob: 'Full-time',
       additional: false,
       featuredPoints: [
-        'Optimization and performance tuning of frontend applications to ensure fast loading times and efficient resource usage, utilizing best practices in code splitting, lazy loading, and caching strategies'
+        'Optimization and performance tuning of frontend applications to ensure fast loading times and efficient resource usage, utilizing best practices in code splitting, lazy loading, and caching strategies',
       ],
-      isRecent: false
+      isRecent: false,
     },
     {
       date: 'Sep. 2016 - Sep. 2023',
@@ -41,13 +41,13 @@ export function createExperience() {
       featuredPoints: [
         'Provide administrative support to lawyer and enhance office effectiveness',
         'Handle communication with clients, witnesses etc.',
-        'Prepare case briefs and summarize depositions, interrogatories and testimony'
+        'Prepare case briefs and summarize depositions, interrogatories and testimony',
       ],
-      isRecent: false
-    }
+      isRecent: false,
+    },
   ];
 
-  jobs.forEach((job) => {
+  jobs.forEach(job => {
     const jobDiv = document.createElement('div');
     jobDiv.className = 'job';
     if (job.isRecent) {
@@ -105,7 +105,7 @@ export function createExperience() {
 
     const featuredPointsUL = document.createElement('ul');
     featuredPointsUL.className = 'featuredPoints';
-    job.featuredPoints.forEach((point) => {
+    job.featuredPoints.forEach(point => {
       const pointLI = document.createElement('li');
       pointLI.textContent = point;
       featuredPointsUL.appendChild(pointLI);
