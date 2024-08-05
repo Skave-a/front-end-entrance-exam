@@ -21,7 +21,7 @@ h2 {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 8px;
   margin: 0;
@@ -47,6 +47,13 @@ body {
   gap: 20px;
 }
 
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -58,23 +65,9 @@ body {
 }
 
 .title {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
-}
-
-.download-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #28d979;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .download-button:hover {
@@ -113,6 +106,8 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;
 }
 
 @keyframes fadeIn {
