@@ -18,9 +18,9 @@ export function createLanguages() {
   progressBarList.className = 'progress-bar-list';
 
   const languages = [
-    { name: 'Russian', width: '168px' },
-    { name: 'English', width: '129px' },
-    { name: 'Uzbek', width: '16px' }
+    { name: 'Russian', width: '100%' },
+    { name: 'English', width: '70%' },
+    { name: 'Uzbek', width: '10%' }
   ];
 
   languages.forEach((lang) => {

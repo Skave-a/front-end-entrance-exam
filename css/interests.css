@@ -17,17 +17,6 @@
   position: relative;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 2px;
-  width: 61px;
-  height: 21px;
-}
-
 .content-in {
   display: flex;
   flex-direction: row;
