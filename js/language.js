@@ -20,10 +20,10 @@ export function createLanguages() {
   const languages = [
     { name: 'Russian', width: '100%' },
     { name: 'English', width: '70%' },
-    { name: 'Uzbek', width: '10%' }
+    { name: 'Uzbek', width: '10%' },
   ];
 
-  languages.forEach((lang) => {
+  languages.forEach(lang => {
     const langItem = document.createElement('div');
     langItem.className = 'language-item';
 

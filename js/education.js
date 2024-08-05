@@ -11,8 +11,8 @@ export function createEducation() {
 
   educationDiv.appendChild(header);
 
-  const createTags = (tags) => {
-    return tags.map((tag) => {
+  const createTags = tags => {
+    return tags.map(tag => {
       const tagElement = document.createElement('span');
       tagElement.className = 'tag-ed';
       tagElement.textContent = tag;
@@ -57,8 +57,8 @@ export function createEducation() {
     '#Ui',
     '#wireframing',
     '#figma',
-    '#Ux'
-  ]).forEach((tag) => {
+    '#Ux',
+  ]).forEach(tag => {
     tags1.appendChild(tag);
   });
 
@@ -98,8 +98,8 @@ export function createEducation() {
     '#law',
     '#legalStudies',
     '#contracts',
-    '#internationalLaws'
-  ]).forEach((tag) => {
+    '#internationalLaws',
+  ]).forEach(tag => {
     tags2.appendChild(tag);
   });
 
@@ -135,11 +135,9 @@ export function createEducation() {
 
   const tags3 = document.createElement('div');
   tags3.className = 'tags';
-  createTags(['#branding', '#web', '#illustration', '#adobe']).forEach(
-    (tag) => {
-      tags3.appendChild(tag);
-    }
-  );
+  createTags(['#branding', '#web', '#illustration', '#adobe']).forEach(tag => {
+    tags3.appendChild(tag);
+  });
 
   content3.appendChild(direction3);
   content3.appendChild(tags3);
