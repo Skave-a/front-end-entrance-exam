@@ -1,4 +1,4 @@
-import { addRippleEffect } from './ripple';
+import { addRippleEffect } from './ripple.js';
 
 export function createExperience() {
   const experienceDiv = document.createElement('div');
